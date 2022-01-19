@@ -1,0 +1,49 @@
+@import '~@mdi/font/css/materialdesignicons.css';
+@import "tailwind";
+
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/a11y-light.css';
+@import 'base';
+
+.theme-light {
+    // Backgrounds
+    --bg-darkest: theme('colors.indigo.900');
+    --bg-darker: theme('colors.indigo.800');
+    --bg-dark: theme('colors.indigo.700');
+    --bg-light: theme('colors.indigo.600');
+    --bg-lighter: theme('colors.indigo.500');
+    --bg-lightest: theme('colors.indigo.400');
+    --bg-primary: theme('colors.gray.100');
+
+    // Texts
+    --text-darkest: theme('colors.gray.800');
+    --text-darker: theme('colors.gray.700');
+    --text-dark: theme('colors.gray.600');
+    --text-light: theme('colors.gray.500');
+    --text-lighter: theme('colors.gray.300');
+    --text-lightest: theme('colors.white');
+
+    // Borders
+    --border-darkest: theme('colors.indigo.800');
+    --border-darker: theme('colors.indigo.700');
+    --border-dark: theme('colors.indigo.600');
+    --border-light: theme('colors.indigo.500');
+    --border-lighter: theme('colors.indigo.400');
+    --border-lightest: theme('colors.indigo.300');
+    --border-primary: theme('colors.gray.300');
+}
+
+.theme-dark {
+    //--bg-primary: theme('colors.gray.900');
+    //--bg-secondary: theme('colors.gray.800');
+    --bg-primary: #323438;
+    --bg-secondary: #1e1f21;
+    --bg-ternary: theme('colors.indigo.500');;
+    --text-primary: theme('colors.gray.300');
+    --text-secondary: theme('colors.gray.500');
+    --text-ternary: theme('colors.indigo.500');
+    --border-primary: theme('colors.gray.700');
+    --border-secondary: theme('colors.gray.500');
+    --border-ternary: theme('colors.indigo.500');
+}
