@@ -97,14 +97,7 @@
         </div>
 
         <div class="w-full md:w-1/2 mx-3">
-            @if ($previous = $page->getPrevious())
-                <a
-                    href="{{ $previous->getUrl() }}"
-                    title="Newer Post: {{ $previous->title }}"
-                >
-                    {{ $previous->title }} &RightArrow;
-                </a>
-            @endif
+  
         </div>
     </nav>
     <div id="fb-root"></div>
