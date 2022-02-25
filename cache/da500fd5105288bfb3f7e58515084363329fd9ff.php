@@ -100,26 +100,11 @@
 
     <nav class="flex flex-col md:flex-row justify-between text-sm text-dark mb-4 mx-2 md:mx-0">
         <div class="w-full md:w-1/2 mb-3 mx-3 md:mx-0 mr-0 md:mr-2">
-            <?php if($next = $page->getNext()): ?>
-                <a
-                    href="<?php echo e($next->getUrl()); ?>"
-                    title="Older Post: <?php echo e($next->title); ?>"
-                >
-                    &LeftArrow; <?php echo e($next->title); ?>
 
-                </a>
-            <?php endif; ?>
         </div>
 
         <div class="w-full md:w-1/2 mx-3">
-            <?php if($previous = $page->getPrevious()): ?>
-                <a
-                    href="<?php echo e($previous->getUrl()); ?>"
-                    title="Newer Post: <?php echo e($previous->title); ?>"
-                >
-                    <?php echo e($previous->title); ?> &RightArrow;
-                </a>
-            <?php endif; ?>
+  
         </div>
     </nav>
     <div id="fb-root"></div>
